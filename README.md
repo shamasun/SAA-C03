@@ -1,76 +1,12 @@
 # AWS Certified Solutions Architect - Associate (SAA-C03)
 
-## 1. Course Fundamentals and AWS Accounts
-### AWS Accounts - The basics
-### Creating the GENERAL AWS Account
-### Multi-factor Authentication (MFA)
-### Securing An AWS Account
-### Creating a Budget
-### Creating the Production Account
-### Identity and Access Management (IAM) Basics
-### Adding an IAM Admin - GENERAL ACCOUNT
-### Adding an IAM Admin User - PRODUCTION ACCOUNT
-### IAM Access Keys
-### Creating Access keys and setting up AWS CLI v2 tools
 
-## 2. Cloud Computing Fundamentals
-### What is Cloud Computing?
-### Public vs Private vs Multi vs Hybrid Cloud
-### Cloud Service Models
 
-## 3. Tech Fundamentals
-### YAML 101 - YAML AINT MARKUP LANGUAGE
-### JSON 101 - JavaScript Object Notation
-### Encryption 101 - PART1 (13:56)
-### Encryption 101 - PART2 (6:42)
-### Network Starter Pack - 0 - INTRO (5:01)
-### Network Starter Pack - 1 - PHYSICAL (10:00)
-### Network Starter Pack - 2 - Data Link - Part 1 (8:47)
-### Network Starter Pack - 2 - Data Link - Part 2 (14:24)
-### Decimal to Binary Conversion (IP Addressing) (17:19)
-### Network Starter Pack - 3 - Network - Part 1 (12:06)
-### Network Starter Pack - 3 - Network - Part 2 (19:13)
-### Network Starter Pack - 3 - Network - Part 3 (15:21)
-### Network Starter Pack - 4 - Transport - Part 1 (15:39)
-### Network Starter Pack - 4 - Transport - Part 2 (14:16)
-### Network Starter Pack - EXTRA - Network Address Translation - PART1 (11:00)
-### Network Starter Pack - EXTRA - Network Address Translation - PART2 (9:38)
-### Network Starter Pack - EXTRA - Subnetting - PART1 (14:36)
-### Network Starter Pack - EXTRA - Subnetting - PART2 (10:33)
-### Network Starter Pack - EXTRA - Distributed Denial of Service (DDOS) (14:38)
-### Secure Sockets Layer (SSL) and Transport Layer Security (TLS) (11:41)
-### VLANS, Trunks & Q-in-Q (16:44)
-### Hash Functions & Hashing (13:19)
-### Digital Signatures (9:26)
-### DNS 101 Miniseries #1 - What does DNS do (2:56)
-### DNS 101 Miniseries #2 - Why does DNS need a complex architecture (13:19)
-### DNS 101 Miniseries #3 - How DNS actually works ... walking the tree (8:46)
-### DNS 101 Miniseries #4 - What happens when a domain is registered? (4:27)
-### DNS 101 Miniseries #5 - Why do we need DNSSEC (11:08)
-### DNS 101 Miniseries #6 - How DNSSEC Works within a Zone (17:34)
-### DNS 101 Miniseries #7 - DNSSEC Chain of Trust (8:16)
-### DNS 101 Miniseries #8 - DNSSEC Root Signing Ceremony (7:53)
-### Recovery Point Objective (RPO) and Recovery Time Objective (RTO) (16:54)
 
-## 4. AWS Fundamentals
-### 4.1 AWS Public vs Private Services (7:04)
-### 4.2 AWS Global Infrastructure (14:53)
-### 4.3 AWS Default Virtual Private Cloud (VPC) (15:19)
-### 4.4 Elastic Compute Cloud (EC2) Basics (14:46)
-### 4.5 My First EC2 Instance - PART1 (11:05)
-### 4.6 My First EC2 Instance - PART2 (9:52)
-### 4.7 Simple Storage Service (S3) Basics (15:48)
-### 4.8 My First S3 Bucket (18:34)
-### 4.9 CloudFormation (CFN) Basics (12:28)
-### 4.10 Simple Automation With CFN (16:52)
-### 4.11 CloudWatch (CW) Basics (13:45)
-### 4.12 Simple Monitoring with Cloudwatch (16:10)
-### 4.13 Shared Responsibility Model (6:20)
-### 4.14 High-Availability vs Fault-Tolerance vs Disaster Recovery (17:21)
-### 4.15 Route53 (R53) Fundamentals (6:29)
-### 4.16 Registering a Domain (8:50)
-### 4.17 DNS Record Types (13:25)
-### 4.18 Fundamentals Section Quiz
+
+
+
+
 
 ## 5. IAM, Accounts and AWS Organizations
 ### 5.1 IAM Identity Policies (15:52)
