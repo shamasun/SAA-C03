@@ -1,7 +1,7 @@
 # AWS Certified Solutions Architect - Associate (SAA-C03)
 
 ## 1. Course Fundamentals and AWS Accounts
-### 1.1 AWS Accounts - The basics (11:33)
+### AWS Accounts - The basics (11:33)
 ### 1.2 Creating the GENERAL AWS Account (20:17)
 ### 1.3 Multi-factor Authentication (MFA) (8:25)
 ### 1.4 Securing An AWS Account (9:49)
