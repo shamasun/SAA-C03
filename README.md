@@ -51,6 +51,7 @@
 ### 3.30 DNS 101 Miniseries #7 - DNSSEC Chain of Trust (8:16)
 ### 3.31 DNS 101 Miniseries #8 - DNSSEC Root Signing Ceremony (7:53)
 ### 3.32 Recovery Point Objective (RPO) and Recovery Time Objective (RTO) (16:54)
+
 ## 4. AWS Fundamentals
 ### 4.1 AWS Public vs Private Services (7:04)
 ### 4.2 AWS Global Infrastructure (14:53)
@@ -70,6 +71,7 @@
 ### 4.16 Registering a Domain (8:50)
 ### 4.17 DNS Record Types (13:25)
 ### 4.18 Fundamentals Section Quiz
+
 ## 5. IAM, Accounts and AWS Organizations
 ### 5.1 IAM Identity Policies (15:52)
 ### 5.2 IAM Users and ARNs (13:49)
@@ -89,6 +91,7 @@
 ### 5.16 Implementing an Organizational Trail (18:26)
 ### 5.17 AWS Control Tower 101 (15:42)
 ### 5.18 IAM & Orgs Section Quiz
+
 ## 6. Simple Storage Service (S3)
 ### 6.1 S3 Security (Resource Policies & ACLs) (18:19)
 ### 6.2 S3 Static Hosting (10:36)
@@ -115,6 +118,7 @@
 ### 6.23 S3 Access Logs (3:05)
 ### 6.24 S3 Object Lock (9:52)
 ### 6.25 S3 Section Quiz
+
 ## 7. Virtual Private Cloud (VPC) Basics
 ### 7.1 VPC Sizing and Structure - PART1 (11:48)
 ### 7.2 VPC Sizing and Structure - PART2 (11:16)
@@ -131,6 +135,7 @@
 ### 7.13 Network Address Translation (NAT) & NAT Gateway - PART2 (11:08)
 ### 7.14 Implementing private internet access using NAT Gateways (19:27)
 ### 7.15 VPC Basics Section Quiz
+
 ## 8. Elastic Compute Cloud (EC2) Basics
 ### 8.1 Virtualization 101 (12:27)
 ### 8.2 EC2 Architecture and Resilience (12:36)
@@ -164,6 +169,7 @@
 ### 8.30 Horizontal & Vertical Scaling (11:23)
 ### 8.31 Instance Metadata [THEORY & DEMO] (15:46)
 ### 8.32 EC2 Basics Section Quiz
+
 ## 9. Containers & ECS
 ### 9.1 Introduction to Containers (17:13)
 ### 9.2 Creating 'container of cats' Docker Image (18:12)
@@ -174,6 +180,7 @@
 ### 9.7 Kubernetes 101 (11:27)
 ### 9.8 Elastic Kubernetes Service (EKS) 101 (6:14)
 ### 9.9 Containers Section Quiz
+
 ## 10. Advanced EC2
 ### 10.1 Bootstrapping EC2 using User Data (10:25)
 ### 10.2 Bootstrapping Wordpress Installation - PART1 (15:34)
@@ -191,6 +198,7 @@
 ### 10.14 Dedicated Hosts (8:56)
 ### 10.15 Enhanced Networking & EBS Optimized (6:57)
 ### 10.16 Advanced EC2 Section Quiz
+
 ## 11. Route 53 Global DNS
 ### 11.1 R53 Public Hosted Zones (6:28)
 ### 11.2 R53 Private Hosted Zones (5:10)
@@ -208,6 +216,7 @@
 ### 11.14 R53 Interoperability (11:50)
 ### 11.15 Implementing DNSSEC using Route53 (17:43)
 ### 11.16 Route53 Section Quiz
+
 ## 12. Relational Database Service (RDS)
 ### 12.1 Database Refresher & MODELS - PART1 (8:51)
 ### 12.2 Database Refresher & MODELS - PART2 (14:45)
@@ -234,6 +243,7 @@
 ### 12.23 Relational Database Service (RDS) - RDS Proxy (9:47)
 ### 12.24 Database Migration Service (DMS) (11:03)
 ### 12.25 RDS Section Quiz
+
 ## 13. Network Storage & Data Lifecycle
 ### 13.1 EFS Architecture (9:05)
 ### 13.2 Implementing EFS - PART1 (9:09)
@@ -241,6 +251,7 @@
 ### 13.4 Using EFS with Wordpress (17:40)
 ### 13.5 AWS Backup (6:36)
 ### 13.6 Network Storage Section Quiz
+
 ## 14. HA & Scaling
 ### 14.1 Regional and Global AWS Architecture (10:42)
 ### 14.2 Evolution of the Elastic Load Balancer (4:10)
@@ -264,6 +275,7 @@
 ### 14.20 Architecture Evolution - STAGE6 (5:41)
 ### 14.21 Gateway Load Balancer (13:40)
 ### 14.22 HA and Scaling Section Quiz
+
 ## 15. Serverless and Application Services
 ### 15.1 Architecture Deep Dive - PART1 (8:52)
 ### 15.2 Architecture Deep Dive - PART2 (13:09)
@@ -296,6 +308,7 @@
 ### 15.29 Amazon MQ 101 (8:15)
 ### 15.30 Amazon AppFlow (3:30)
 ### 15.31 Serverless and App Services Section Quiz
+
 ## 16. Global Content Delivery and Optimization
 ### 16.1 Cloudfront Architecture (14:56)
 ### 16.2 CloudFront (CF) - Behaviours (9:21)
@@ -312,6 +325,7 @@
 ### 16.13 Lambda@Edge (8:03)
 ### 16.14 Global Accelerator (10:29)
 ### 16.15 CDN and Optimisation Section Quiz
+
 ## 17. Advanced VPC Networking
 ### 17.1 VPC Flow Logs (9:56)
 ### 17.2 Egress-Only Internet gateway (6:46)
@@ -323,6 +337,7 @@
 ### 17.8 VPC Peering (9:04)
 ### 17.9 VPC Peering (22:38)
 ### 17.10 Advanced VPC Section Quiz
+
 ## 18. Hybrid Environments and Migration
 ### 18.1 Border Gateway Protocol 101 (17:29)
 ### 18.2 IPSec VPN Fundamentals (14:54)
@@ -346,6 +361,7 @@
 ### 18.20 FSx For Lustre (13:57)
 ### 18.21 AWS Transfer Family (10:24)
 ### 18.22 Hybrid and Migration Section Quiz
+
 ## 19. Security, Deployment & Operations
 ### 19.1 AWS Secrets Manager (7:44)
 ### 19.2 Application Layer (L7) Firewall (7:44)
@@ -357,6 +373,7 @@
 ### 19.8 Amazon Inspector (6:28)
 ### 19.9 Amazon Guardduty (4:14)
 ### 19.10 Section Quiz
+
 ## 20. Infrastructure as Code (CloudFormation)
 ### 20.1 CloudFormation Physical & Logical Resources (7:30)
 ### 20.2 Simple Non Portable Template - PART1 (10:28)
@@ -382,6 +399,7 @@
 ### 20.22 CloudFormation Custom Resources (11:03)
 ### 20.23 CloudFormation Custom Resources-PART1 (9:12)
 ### 20.24 CloudFormation Custom Resources-PART2 (13:27)
+
 ## 21. NOSQL Databases & DynamoDB
 ### 21.1 DynamoDB - Architecture (10:49)
 ### 21.2 DynamoDB - Operations, Consistency and Performance-PART1 (13:06)
@@ -398,6 +416,7 @@
 ### 21.13 Redshift Architecture (11:32)
 ### 21.14 Redshift DR and Resilience (3:40)
 ### 21.15 NoSQL Section Quiz
+
 ## 22. Machine Learning 101
 ### 22.1 Amazon Comprehend (7:28)
 ### 22.2 Amazon Kendra (5:00)
@@ -410,8 +429,10 @@
 ### 22.9 Amazon Forecast 101 (4:04)
 ### 22.10 Amazon Fraud Detector (3:34)
 ### 22.11 Amazon SageMaker (5:39)
+
 ## 23. Other Services & Features
 ### 23.1 AWS Local Zones (8:52)
+
 ## 24. Exam
 ### 24.1 General AWS Exam Technique - 3 Phase Approach (8:56)
 ### 24.2 General AWS Question Technique - PART1 (14:12)
