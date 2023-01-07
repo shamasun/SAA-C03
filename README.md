@@ -1,56 +1,56 @@
 # AWS Certified Solutions Architect - Associate (SAA-C03)
 
 ## 1. Course Fundamentals and AWS Accounts
-### AWS Accounts - The basics (11:33)
-### 1.2 Creating the GENERAL AWS Account (20:17)
-### 1.3 Multi-factor Authentication (MFA) (8:25)
-### 1.4 Securing An AWS Account (9:49)
-### 1.5 Creating a Budget (7:14)
-### 1.6 Creating the Production Account (4:59)
-### 1.7 Identity and Access Management (IAM) Basics (13:01)
-### 1.8 Adding an IAM Admin - GENERAL ACCOUNT (12:37)
-### 1.9 Adding an IAM Admin User - PRODUCTION ACCOUNT (7:33)
-### 1.10 IAM Access Keys (7:10)
-### 1.11 Creating Access keys and setting up AWS CLI v2 tools (17:24)
+### AWS Accounts - The basics
+### Creating the GENERAL AWS Account
+### Multi-factor Authentication (MFA)
+### Securing An AWS Account
+### Creating a Budget
+### Creating the Production Account
+### Identity and Access Management (IAM) Basics
+### Adding an IAM Admin - GENERAL ACCOUNT
+### Adding an IAM Admin User - PRODUCTION ACCOUNT
+### IAM Access Keys
+### Creating Access keys and setting up AWS CLI v2 tools
 
 ## 2. Cloud Computing Fundamentals
-### 2.1 Cloud Computing - what is it...really (15:25) 
-### 2.2 Public vs Private vs Multi vs Hybrid Cloud (8:52)
-### 2.3 Cloud Service Models (11:32)
+### What is Cloud Computing?
+### Public vs Private vs Multi vs Hybrid Cloud
+### Cloud Service Models
 
 ## 3. Tech Fundamentals
-### 3.1 YAML101 - YAML AINT MARKUP LANGUAGE (9:55)
-### 3.2 JSON101 - JavaScript Object Notation (7:32)
-### 3.3 Encryption 101 - PART1 (13:56)
-### 3.4 Encryption 101 - PART2 (6:42)
-### 3.5 Network Starter Pack - 0 - INTRO (5:01)
-### 3.6 Network Starter Pack - 1 - PHYSICAL (10:00)
-### 3.7 Network Starter Pack - 2 - Data Link - Part 1 (8:47)
-### 3.8 Network Starter Pack - 2 - Data Link - Part 2 (14:24)
-### 3.9 Decimal to Binary Conversion (IP Addressing) (17:19)
-### 3.10 Network Starter Pack - 3 - Network - Part 1 (12:06)
-### 3.11 Network Starter Pack - 3 - Network - Part 2 (19:13)
-### 3.12 Network Starter Pack - 3 - Network - Part 3 (15:21)
-### 3.13 Network Starter Pack - 4 - Transport - Part 1 (15:39)
-### 3.14 Network Starter Pack - 4 - Transport - Part 2 (14:16)
-### 3.15 Network Starter Pack - EXTRA - Network Address Translation - PART1 (11:00)
-### 3.16 Network Starter Pack - EXTRA - Network Address Translation - PART2 (9:38)
-### 3.17 Network Starter Pack - EXTRA - Subnetting - PART1 (14:36)
-### 3.18 Network Starter Pack - EXTRA - Subnetting - PART2 (10:33)
-### 3.19 Network Starter Pack - EXTRA - Distributed Denial of Service (DDOS) (14:38)
-### 3.20 Secure Sockets Layer (SSL) and Transport Layer Security (TLS) (11:41)
-### 3.21 VLANS, Trunks & Q-in-Q (16:44)
-### 3.22 Hash Functions & Hashing (13:19)
-### 3.23 Digital Signatures (9:26)
-### 3.24 DNS 101 Miniseries #1 - What does DNS do (2:56)
-### 3.25 DNS 101 Miniseries #2 - Why does DNS need a complex architecture (13:19)
-### 3.26 DNS 101 Miniseries #3 - How DNS actually works ... walking the tree (8:46)
-### 3.27 DNS 101 Miniseries #4 - What happens when a domain is registered? (4:27)
-### 3.28 DNS 101 Miniseries #5 - Why do we need DNSSEC (11:08)
-### 3.29 DNS 101 Miniseries #6 - How DNSSEC Works within a Zone (17:34)
-### 3.30 DNS 101 Miniseries #7 - DNSSEC Chain of Trust (8:16)
-### 3.31 DNS 101 Miniseries #8 - DNSSEC Root Signing Ceremony (7:53)
-### 3.32 Recovery Point Objective (RPO) and Recovery Time Objective (RTO) (16:54)
+### YAML 101 - YAML AINT MARKUP LANGUAGE
+### JSON 101 - JavaScript Object Notation
+### Encryption 101 - PART1 (13:56)
+### Encryption 101 - PART2 (6:42)
+### Network Starter Pack - 0 - INTRO (5:01)
+### Network Starter Pack - 1 - PHYSICAL (10:00)
+### Network Starter Pack - 2 - Data Link - Part 1 (8:47)
+### Network Starter Pack - 2 - Data Link - Part 2 (14:24)
+### Decimal to Binary Conversion (IP Addressing) (17:19)
+### Network Starter Pack - 3 - Network - Part 1 (12:06)
+### Network Starter Pack - 3 - Network - Part 2 (19:13)
+### Network Starter Pack - 3 - Network - Part 3 (15:21)
+### Network Starter Pack - 4 - Transport - Part 1 (15:39)
+### Network Starter Pack - 4 - Transport - Part 2 (14:16)
+### Network Starter Pack - EXTRA - Network Address Translation - PART1 (11:00)
+### Network Starter Pack - EXTRA - Network Address Translation - PART2 (9:38)
+### Network Starter Pack - EXTRA - Subnetting - PART1 (14:36)
+### Network Starter Pack - EXTRA - Subnetting - PART2 (10:33)
+### Network Starter Pack - EXTRA - Distributed Denial of Service (DDOS) (14:38)
+### Secure Sockets Layer (SSL) and Transport Layer Security (TLS) (11:41)
+### VLANS, Trunks & Q-in-Q (16:44)
+### Hash Functions & Hashing (13:19)
+### Digital Signatures (9:26)
+### DNS 101 Miniseries #1 - What does DNS do (2:56)
+### DNS 101 Miniseries #2 - Why does DNS need a complex architecture (13:19)
+### DNS 101 Miniseries #3 - How DNS actually works ... walking the tree (8:46)
+### DNS 101 Miniseries #4 - What happens when a domain is registered? (4:27)
+### DNS 101 Miniseries #5 - Why do we need DNSSEC (11:08)
+### DNS 101 Miniseries #6 - How DNSSEC Works within a Zone (17:34)
+### DNS 101 Miniseries #7 - DNSSEC Chain of Trust (8:16)
+### DNS 101 Miniseries #8 - DNSSEC Root Signing Ceremony (7:53)
+### Recovery Point Objective (RPO) and Recovery Time Objective (RTO) (16:54)
 
 ## 4. AWS Fundamentals
 ### 4.1 AWS Public vs Private Services (7:04)
