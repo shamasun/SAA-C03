@@ -10,7 +10,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 4. **Rapid Elasticity**: Elastic provisioning and released to scale rapidly outward/ inward **AND** To consumer, capabilities appear unlimited. 
 5. **Measured service**: Usage can be monitored, controlled, reported and billed.
 
-> __Note__: 
+> __Note__
 - Internalilze these characteristics
 - Each time a service is introduced, examine it w.r.t them.
 
@@ -21,7 +21,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 3. **Private**: Using a Cloud environment, dedicated to a customer on-premises.
 4. **Hybrid**: Private cloud + Public cloud
 
-Side comments:
+> __Note__
 - With 3rd party abstraction tool in multi-cloud, you may loose features unique to a cloud platform. Abstraction comes at a cost.
 - Names of Private cloud offerings: Outposts (AWS); Azure stack (Azure); Anthos (GCP).
 - Difference between On-premises infra (VMWare, HyperV, Zen Server) vs. Private cloud. Private cloud meets Cloud Computing definition. The former usually don't.
