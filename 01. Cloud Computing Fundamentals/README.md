@@ -12,7 +12,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 
 > __Note__
 - Mnemonic = <!-- O-Ne-PooRe-Elas!-MeServe -->
-- Internalize these characteristics and each time a service is introduced, examine it w.r.t them.
+- Each time a service is introduced, examine it w.r.t these characteristics.
 
 ### Public vs Private vs Multi vs Hybrid Cloud
 
@@ -30,3 +30,6 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 - Hybrid cloud => Same tooling, same interface, for public and private cloud.
 
 ### Cloud Service Models
+
+Infrastructure stack is made up of 
+![This is an image](01. Cloud Computing Fundamentals\Infrastructure stack.png)
