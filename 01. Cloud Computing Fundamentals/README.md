@@ -32,7 +32,7 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 ### Cloud Service Models
 
 #### Terms & Concepts
-- *Infrastructure* or *Application stack* = Facilities, Infrastructure, Servers, Virtualization, OS, Container, Runtime, Data, and Application
+- *Infrastructure* or *Application stack* = Facilities + Infrastructure + Servers + Virtualization + OS + Container + Runtime + Data + Application
 - *Unit of consumption*
     - what you consume and pay for
     - part of the stack you manage upwards
