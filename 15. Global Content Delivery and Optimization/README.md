@@ -1,1 +1,16 @@
-# Test
+## 16. Global Content Delivery and Optimization
+### 16.1 Cloudfront Architecture (14:56)
+### 16.2 CloudFront (CF) - Behaviours (9:21)
+### 16.3 CF TTL and Invalidations (13:48)
+### 16.4 ACM (11:21)
+### 16.5 Cloudfront and SSL/TLS (14:59)
+### 16.6 CloudFront (CF) - Origin Types & Origin Architecture (10:20)
+### 16.7 CloudFront (CF) - Adding a CDN to a static Website-PART1 (16:23)
+### 16.8 CloudFront (CF) - Adding a CDN to a static Website-PART2 (12:24)
+### 16.9 CloudFront (CF) - Adding an Alternate CNAME and SSL (11:12)
+### 16.10 Securing CF and S3 using OAI (8:50)
+### 16.11 CloudFront - Private Distribution & Behaviours (7:49)
+### 16.12 CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (11:21)
+### 16.13 Lambda@Edge (8:03)
+### 16.14 Global Accelerator (10:29)
+### 16.15 CDN and Optimisation Section Quiz

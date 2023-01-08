@@ -1,1 +1,16 @@
-# Test
+## 7. Virtual Private Cloud (VPC) Basics
+### 7.1 VPC Sizing and Structure - PART1 (11:48)
+### 7.2 VPC Sizing and Structure - PART2 (11:16)
+### 7.3 Custom VPCs (15:29)
+### 7.4 VPC Subnets (10:42)
+### 7.5 Implement multi-tier VPC subnets (20:34)
+### 7.6 VPC Routing, Internet Gateway & Bastion Hosts (17:35)
+### 7.7 Configuring A4l public subnets and Jumpbox - PART1 (14:09)
+### 7.8 Configuring A4l public subnets and Jumpbox - PART2 (11:43)
+### 7.9 Stateful vs Stateless Firewalls (14:04)
+### 7.10 Network Access Control Lists (NACLs) (12:38)
+### 7.11 Security Groups (SG) (11:48)
+### 7.12 Network Address Translation (NAT) & NAT Gateway - PART1 (13:43)
+### 7.13 Network Address Translation (NAT) & NAT Gateway - PART2 (11:08)
+### 7.14 Implementing private internet access using NAT Gateways (19:27)
+### 7.15 VPC Basics Section Quiz

@@ -1,1 +1,19 @@
-# Test
+## 5. IAM, Accounts and AWS Organizations
+### 5.1 IAM Identity Policies (15:52)
+### 5.2 IAM Users and ARNs (13:49)
+### 5.3 Simple Identity Permissions in AWS (16:09)
+### 5.4 IAM Groups (7:48)
+### 5.5 Permissions control using IAM Groups (9:19)
+### 5.6 IAM Roles - The Tech (8:13)
+### 5.7 When to use IAM Roles (15:27)
+### 5.8 Service-linked Roles & PassRole (5:16)
+### 5.9 AWS Organizations (12:56)
+### 5.10 AWS Organizations - PART1 (7:00)
+### 5.11 AWS Organizations - PART2 (13:55)
+### 5.12 Service Control Policies (SCPs) (12:44)
+### 5.13 Using Service Control Policies (16:45)
+### 5.14 CloudWatch Logs (7:16)
+### 5.15 CloudTrail (11:40)
+### 5.16 Implementing an Organizational Trail (18:26)
+### 5.17 AWS Control Tower 101 (15:42)
+### 5.18 IAM & Orgs Section Quiz

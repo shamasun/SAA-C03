@@ -1,1 +1,17 @@
-# Test
+## 10. Advanced EC2
+### 10.1 Bootstrapping EC2 using User Data (10:25)
+### 10.2 Bootstrapping Wordpress Installation - PART1 (15:34)
+### 10.3 Bootstrapping Wordpress Installation - PART2 (6:46)
+### 10.4 Enhanced Bootstrapping with CFN-INIT (11:52)
+### 10.5 CFN-INIT and CFN Creation Policies (13:05)
+### 10.6 EC2 Instance Roles & Profile (4:18)
+### 10.7 Using EC2 Instance Roles (13:31)
+### 10.8 SSM Parameter Store (6:16)
+### 10.9 Parameter Store (16:11)
+### 10.10 System and Application Logging on EC2 (6:15)
+### 10.11 Logging and Metrics with CW Agent-PART1 (12:25)
+### 10.12 Logging and Metrics with CW Agent-PART2 (9:07)
+### 10.13 EC2 Placement Groups (14:29)
+### 10.14 Dedicated Hosts (8:56)
+### 10.15 Enhanced Networking & EBS Optimized (6:57)
+### 10.16 Advanced EC2 Section Quiz

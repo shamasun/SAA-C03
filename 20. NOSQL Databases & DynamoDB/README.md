@@ -1,1 +1,16 @@
-# Test
+## 21. NOSQL Databases & DynamoDB
+### 21.1 DynamoDB - Architecture (10:49)
+### 21.2 DynamoDB - Operations, Consistency and Performance-PART1 (13:06)
+### 21.3 DynamoDB - Operations, Consistency and Performance-PART2 (11:24)
+### 21.4 DynamoDB Local and Global Secondary Indexes (12:35)
+### 21.5 DynamoDB - Streams & Lambda Triggers (9:10)
+### 21.6 DynamoDB - Global Tables (5:09)
+### 21.7 DynamoDB - Accelerator (DAX) (10:58)
+### 21.8 DynamoDB - TTL (4:49)
+### 21.9 Amazon Athena (8:19)
+### 21.10 Athena Demo - PART1 (13:31)
+### 21.11 Athena Demo - PART2 (11:37)
+### 21.12 Elasticache (12:51)
+### 21.13 Redshift Architecture (11:32)
+### 21.14 Redshift DR and Resilience (3:40)
+### 21.15 NoSQL Section Quiz

@@ -1,1 +1,12 @@
-# Test
+## 22. Machine Learning 101
+### 22.1 Amazon Comprehend (7:28)
+### 22.2 Amazon Kendra (5:00)
+### 22.3 Amazon Lex (5:51)
+### 22.4 Amazon Polly (4:04)
+### 22.5 Amazon Rekognition (4:18)
+### 22.6 Amazon Textract (8:42)
+### 22.7 Amazon Transcribe (4:55)
+### 22.8 Amazon Translate (4:32)
+### 22.9 Amazon Forecast 101 (4:04)
+### 22.10 Amazon Fraud Detector (3:34)
+### 22.11 Amazon SageMaker (5:39)

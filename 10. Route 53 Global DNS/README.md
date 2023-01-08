@@ -1,1 +1,17 @@
-# Test
+## 11. Route 53 Global DNS
+### 11.1 R53 Public Hosted Zones (6:28)
+### 11.2 R53 Private Hosted Zones (5:10)
+### 11.3 CNAME vs R53 Alias (5:19)
+### 11.4 Simple Routing (2:17)
+### 11.5 R53 Health Checks (12:41)
+### 11.6 Failover Routing (1:53)
+### 11.7 Using R53 and Failover Routing-PART1 (16:41)
+### 11.8 Using R53 and Failover Routing-PART2 (6:28)
+### 11.9 Multi Value Routing (2:32)
+### 11.10 Weighted Routing (3:24)
+### 11.11 Latency Routing (2:44)
+### 11.12 Geolocation Routing (5:02)
+### 11.13 Geoproximity (4:50)
+### 11.14 R53 Interoperability (11:50)
+### 11.15 Implementing DNSSEC using Route53 (17:43)
+### 11.16 Route53 Section Quiz
