@@ -31,4 +31,5 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 
 ### Cloud Service Models
 
-Infrastructure stack consists of ![Stack](Infrastructure%20stack.png)
+Infrastructure stack consists of ![Stack](https://github.com/shamasun/SAA-C03/blob/fc5874a237703d596c00b97b3384964d9b1c151c/01.%20Cloud%20Computing%20Fundamentals/Infrastructure%20stack.png)
+
