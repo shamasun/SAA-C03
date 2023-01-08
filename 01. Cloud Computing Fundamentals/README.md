@@ -22,9 +22,10 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 4. **Hybrid**: Private cloud + Public cloud
 
 > __Note__
-- With 3rd party abstraction tool in multi-cloud, you may loose features unique to a cloud platform. Abstraction comes at a cost.
+- With 3rd party abstraction tools for multi-cloud, you may loose features unique to a cloud platform. Abstraction comes at a cost.
 - Names of Private cloud offerings: Outposts (AWS); Azure stack (Azure); Anthos (GCP).
 - Difference between On-premises infra (VMWare, HyperV, Zen Server) vs. Private cloud. Private cloud meets Cloud Computing definition. The former usually don't.
-- Using Public cloud with on-premises equipment is a Hybrid environment/ network (not Hybrid Cloud). In true Hybrid cloud, one gets the same tooling, same interface, etc. in working with both cloud environments.
+- Hybrid environment/ network (not Hybrid Cloud) = Using Public cloud with on-premises equipment. 
+- In true Hybrid cloud, one gets the same tooling, same interface, etc. across public and private cloud.
 
 ### Cloud Service Models
