@@ -4,7 +4,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 
 1.  **On-demand self-service**: Provision as needed, without requiring human interaction.
 2.  **Broad network access**: Available over the network and accessed through standard mechanisms (http, https, ssh, vpn, etc.)
-3.  **Resource pooling**: User has no control or knowledge over exact location of resources **AND** Pooling over several customers using multi-tenancy.
+3.  **Resource pooling**: User has no control or knowledge over location of resources **AND** Pooling over several customers using multi-tenancy.
 4.  **Rapid Elasticity**: Elastic provisioning and released to scale rapidly outward/ inward **AND** To consumer, capabilities appear unlimited. 
 5.  **Measured service**: Usage can be monitored, controlled, reported and billed.
 
