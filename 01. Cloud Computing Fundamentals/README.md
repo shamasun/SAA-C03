@@ -38,5 +38,5 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
     - part of the stack you manage upwards
     - Example - purchased a VM? Unit of consumption = OS
 
-### Types of Cloud Service models
+#### Types of Cloud Service models
 See image below ![models](cloud%20models.png)
