@@ -1,8 +1,9 @@
 ## Cloud Computing Fundamentals
+<span style="color:red">some
 ### What is Cloud Computing?
 Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/blob/703d03ef3e8df7f3fa2ee3fd2674d5acecf02d07/01.%20Cloud%20Computing%20Fundamentals/nistspecialpublication800-145.pdf). All of them need to be satisfied. Mnemonic = ONPrEM
 
-1. **On-demand self-service**: Provision as needed, without requiring human interaction.
+1. **On-demand self-service** text</span>: Provision as needed, without requiring human interaction.
 2. **Broad network access**: Available over the network and accessed through standard mechanisms (http, https, ssh, vpn, etc.)
 3. **Resource pooling**: User has no control or knowledge over location of resources **AND** Pooling over several customers using multi-tenancy.
 4. **Rapid Elasticity**: Elastic provisioning and released to scale rapidly outward/ inward **AND** To consumer, capabilities appear unlimited. 
@@ -20,7 +21,7 @@ Exam notes:
 4. **Hybrid**: Private cloud + Public cloud
 
 Side comments:
-- With 3rd parties providing a management console across cloud vendors, you loose out on features unique to a cloud platform. Abstraction comes at a cost.
+- With 3rd party abstraction tool in multi-cloud, you may loose features unique to a cloud platform. Abstraction comes at a cost.
 - Names of Private cloud offerings: Outposts (AWS); Azure stack (Azure); Anthos (GCP).
 - Difference between On-premises infra (VMWare, HyperV, Zen Server) vs. Private cloud. Private cloud meets Cloud Computing definition. The former usually don't.
 - Using Public cloud with on-premises equipment is a Hybrid environment/ network (not Hybrid Cloud). In true Hybrid cloud, one gets the same tooling, same interface, etc. in working with both cloud environments.
