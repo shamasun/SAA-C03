@@ -31,5 +31,4 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 
 ### Cloud Service Models
 
-Infrastructure stack is made up of 
-![This is an image](01. Cloud Computing Fundamentals\Infrastructure stack.png)
+Infrastructure stack is made up of ![This is an image](/01. Cloud Computing Fundamentals/Infrastructure stack.png)
