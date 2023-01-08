@@ -32,11 +32,13 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 ### Cloud Service Models
 
 #### Terms & Concepts
-- *Infrastructure* or *Application stack* consists of ![stack](https://shamasun.github.io/SAA-C03/assets/images/Infrastructure%20stack.png?raw=true)
+- *Infrastructure* or *Application stack* consists of 
+![stack](https://shamasun.github.io/SAA-C03/assets/images/Infrastructure%20stack.png?raw=true)
 - *Unit of consumption*
     - what you consume and pay for
     - part of the stack you manage upwards
     - Example - purchased a VM? Unit of consumption = OS
 
 #### Types of Cloud Service models
-See image below ![models](/assets/images/cloud%20models.png)
+See image below 
+![models](/assets/images/cloud%20models.png?raw=true)
