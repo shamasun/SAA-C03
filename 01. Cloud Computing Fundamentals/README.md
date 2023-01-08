@@ -2,7 +2,7 @@
 
 ### What is Cloud Computing?
 
-Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/blob/703d03ef3e8df7f3fa2ee3fd2674d5acecf02d07/01.%20Cloud%20Computing%20Fundamentals/nistspecialpublication800-145.pdf). All of them need to be satisfied.
+Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication800-145.pdf). All of them need to be satisfied.
 
 1. **On-demand self-service**</span>: Provision as needed, without requiring human interaction.
 2. **Broad network access**: Available over the network and accessed through standard mechanisms (http, https, ssh, vpn, etc.)
@@ -32,11 +32,11 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 ### Cloud Service Models
 
 #### Terms & Concepts
-- *Infrastructure* or *Application stack* consists of ![stack](Infrastructure%20stack.png)
+- *Infrastructure* or *Application stack* consists of ![stack](/assets/images/Infrastructure%20stack.png)
 - *Unit of consumption*
     - what you consume and pay for
     - part of the stack you manage upwards
     - Example - purchased a VM? Unit of consumption = OS
 
 #### Types of Cloud Service models
-See image below ![models](cloud%20models.png)
+See image below ![models](/assets/images/cloud%20models.png)
