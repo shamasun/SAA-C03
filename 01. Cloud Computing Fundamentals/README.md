@@ -41,4 +41,4 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 
 #### Types of Cloud Service models
 See image below 
-![models](/assets/images/cloud%20models.png?raw=true)
+![models](https://shamasun.github.io/SAA-C03/assets/images/cloud%20models.png?raw=true)
