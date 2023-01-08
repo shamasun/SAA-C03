@@ -11,7 +11,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 5. **Measured service**: Usage can be monitored, controlled, reported and billed.
 
 > __Note__
-- Mnemonic = O-Ne-PooRe-Elas!-MeServe :nerd_face:
+- <!-- Mnemonic = O-Ne-PooRe-Elas!-MeServe :nerd_face: -->
 - Internalize these characteristics and each time a service is introduced, examine it w.r.t them.
 
 ### Public vs Private vs Multi vs Hybrid Cloud
@@ -22,10 +22,11 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 4. **Hybrid**: Private cloud + Public cloud
 
 > __Note__
-- With 3rd party abstraction tools for multi-cloud, you may loose features unique to a cloud platform. Abstraction comes at a cost.
-- Names of Private cloud offerings: Outposts (AWS); Azure stack (Azure); Anthos (GCP).
-- Difference between On-premises infra (VMWare, HyperV, Zen Server) vs. Private cloud. Private cloud meets Cloud Computing definition. The former usually don't.
+- Third party abstraction tools for multi-cloud => Loss of features unique to a cloud platform. Abstraction comes at a cost.
+- Names of Private cloud offerings = Outposts (AWS); Azure stack (Azure); Anthos (GCP).
+- Private cloud meets Cloud Computing definition.
+- On-premises infra (VMWare, HyperV, Zen Server) doesn't meet Cloud Computing definition.
 - Hybrid environment/ network (not Hybrid Cloud) = Using Public cloud with on-premises equipment. 
-- In true Hybrid cloud, one gets the same tooling, same interface, etc. across public and private cloud.
+- Hybrid cloud => Same tooling, same interface, for public and private cloud.
 
 ### Cloud Service Models
