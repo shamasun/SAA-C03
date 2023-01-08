@@ -11,7 +11,7 @@ Based on the formal definiton from [(NIST)](https://github.com/shamasun/SAA-C03/
 5. **Measured service**: Usage can be monitored, controlled, reported and billed.
 
 > __Note__
-- Mnemonic = ONPrEM :nerd_face:
+- Mnemonic = O-Ne-PooRe-Elas!-MeServe :nerd_face:
 - Internalize these characteristics and each time a service is introduced, examine it w.r.t them.
 
 ### Public vs Private vs Multi vs Hybrid Cloud
