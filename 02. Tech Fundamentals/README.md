@@ -13,21 +13,21 @@
     - list of dictionaries
     - dictionary with list values
 - Example of an employee record
-```
-name: Martin D'vloper
-job: Developer
-skill: Elite
-employed: True
-foods:
-  - Apple
-  - Orange
-  - Strawberry
-  - Mango
-languages:
-  perl: Elite
-  python: Elite
-  pascal: Lame
-```
+    ```
+    name: Bharathan
+    job: Developer
+    skill: Elite
+    employed: True
+    foods:
+    - Apple
+    - Orange
+    - Strawberry
+    - Mango
+    languages:
+    perl: Elite
+    python: Elite
+    pascal: Lame
+    ```
 
 #### Elments of a list can be written
 - in-line within square brackets
