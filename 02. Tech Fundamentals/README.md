@@ -32,15 +32,14 @@ languages:
  python: Elite
  pascal: Lame
 ```
-[^1]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+[^1]: ![Ansible](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
 
 ### 2.2 JSON (JavaScript Object Notation) 101
-- Object = Unordered set of key-value pairs enclosed in {}
-- Array = collection of elements in [], separated by commas.
+- Object = Unordered set of key-value pairs enclosed in { }
+- Array = collection of elements in [ ], separated by commas.
 - Values = string, object ( $\therefore{}$ nested), number, array, true, false, null
 - In AWS used for CloudFormation and Policy documents
-- Forgiving. No indentation demands like YAML
-
+- Forgiving. No indentation demands like YAML.
 
 ### 2.3 Encryption
 
