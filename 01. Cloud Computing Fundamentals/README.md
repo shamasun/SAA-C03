@@ -1,6 +1,6 @@
-## Cloud Computing Fundamentals
+## 1.0 Cloud Computing Fundamentals
 
-### What is Cloud Computing?
+### 1.1 What is Cloud Computing?
 
 Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication800-145.pdf). All of them need to be satisfied.
 
@@ -14,7 +14,7 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 - Mnemonic = <!-- O-Ne-PooRe-Elas!-MeServe -->
 - Each time a service is introduced, examine it w.r.t these characteristics.
 
-### Public vs Private vs Multi vs Hybrid Cloud
+### 1.2 Public vs Private vs Multi vs Hybrid Cloud
 
 1. **Public**: Using a public cloud environment
 2. **Multi**: Using more than one Cloud environments. With or without a 3rd party abstraction tool.
@@ -29,14 +29,14 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 - Hybrid environment/ network (not Hybrid Cloud) = Using Public cloud with on-premises equipment. 
 - Hybrid cloud => Same tooling, same interface, for public and private cloud.
 
-### Cloud Service Models
+### 1.3 Cloud Service Models
 
-#### Terms & Concepts
+#### 1.3.1 Terms & Concepts
 - *Infrastructure* or *Application stack* = Facilities + Infrastructure + Servers + Virtualization + OS + Container + Runtime + Data + Application
 - *Unit of consumption*
     - what you consume and pay for
     - part of the stack you manage upwards
     - Example - purchased a VM? Unit of consumption = OS
 
-#### Types of Cloud Service models
+#### 1.3.2 Types of Cloud Service models
 ![models](https://shamasun.github.io/SAA-C03/assets/images/cloud%20models.png?raw=true)

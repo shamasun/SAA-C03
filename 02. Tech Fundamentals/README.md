@@ -1,33 +1,54 @@
-## Tech Fundamentals
-### YAML 101 - YAML AINT MARKUP LANGUAGE
-### JSON 101 - JavaScript Object Notation
-### Encryption 101 - PART1 (13:56)
-### Encryption 101 - PART2 (6:42)
-### Network Starter Pack - 0 - INTRO (5:01)
-### Network Starter Pack - 1 - PHYSICAL (10:00)
-### Network Starter Pack - 2 - Data Link - Part 1 (8:47)
-### Network Starter Pack - 2 - Data Link - Part 2 (14:24)
-### Decimal to Binary Conversion (IP Addressing) (17:19)
-### Network Starter Pack - 3 - Network - Part 1 (12:06)
-### Network Starter Pack - 3 - Network - Part 2 (19:13)
-### Network Starter Pack - 3 - Network - Part 3 (15:21)
-### Network Starter Pack - 4 - Transport - Part 1 (15:39)
-### Network Starter Pack - 4 - Transport - Part 2 (14:16)
-### Network Starter Pack - EXTRA - Network Address Translation - PART1 (11:00)
-### Network Starter Pack - EXTRA - Network Address Translation - PART2 (9:38)
-### Network Starter Pack - EXTRA - Subnetting - PART1 (14:36)
-### Network Starter Pack - EXTRA - Subnetting - PART2 (10:33)
-### Network Starter Pack - EXTRA - Distributed Denial of Service (DDOS) (14:38)
-### Secure Sockets Layer (SSL) and Transport Layer Security (TLS) (11:41)
-### VLANS, Trunks & Q-in-Q (16:44)
-### Hash Functions & Hashing (13:19)
-### Digital Signatures (9:26)
-### DNS 101 Miniseries #1 - What does DNS do (2:56)
-### DNS 101 Miniseries #2 - Why does DNS need a complex architecture (13:19)
-### DNS 101 Miniseries #3 - How DNS actually works ... walking the tree (8:46)
-### DNS 101 Miniseries #4 - What happens when a domain is registered? (4:27)
-### DNS 101 Miniseries #5 - Why do we need DNSSEC (11:08)
-### DNS 101 Miniseries #6 - How DNSSEC Works within a Zone (17:34)
-### DNS 101 Miniseries #7 - DNSSEC Chain of Trust (8:16)
-### DNS 101 Miniseries #8 - DNSSEC Root Signing Ceremony (7:53)
-### Recovery Point Objective (RPO) and Recovery Time Objective (RTO) (16:54)
+## 2.0 Technical Fundamentals
+### 2.1 YAML (YAML Ain't a Markup Language) 101
+
+### 2.2 JSON (JavaScript Object Notation) 101
+
+### 2.3 Encryption
+
+### 2.4 Network Starter Pack 
+
+#### 2.4.1 Introduction
+
+#### 2.4.2 Physical layer
+
+#### 2.4.3 Data link
+
+#### 2.4.4 Network
+
+#### 2.4.5 Transport
+
+#### 2.4.6 Network address translation
+
+#### 2.4.7 Decimal to Binary Conversion (IP Addressing)
+
+#### 2.4.8 Subnetting
+
+#### 2.4.9 Distributed Denial of Service (DDOS)
+
+### 2.5 Secure Sockets Layer (SSL) and Transport Layer Security (TLS)
+
+### 2.6 VLANS, Trunks & Q-in-Q
+
+### 2.7 Hash Functions & Hashing
+
+### 2.8 Digital Signatures
+
+### 2.9 DNS 101
+
+#### 2.9.1 What does DNS do?
+
+#### 2.9.2 Why does DNS need a complex architecture?
+
+#### 2.9.3 How DNS works? - walking the tree
+
+#### 2.9.4 What happens when a domain is registered?
+
+#### 2.9.5 Why do we need DNSSEC?
+
+#### 2.9.6 How DNSSEC Works within a Zone?
+
+#### 2.9.7 DNSSEC Chain of Trust
+
+#### 2.9.8 DNSSEC Root Signing Ceremony
+
+### 2.10 Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
