@@ -32,7 +32,7 @@ languages:
  python: Elite
  pascal: Lame
 ```
-[^1]: ![Ansible](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
+[^1]: ![Ansible](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html?raw=true)
 
 ### 2.2 JSON (JavaScript Object Notation) 101
 - Object = Unordered set of key-value pairs enclosed in { }
