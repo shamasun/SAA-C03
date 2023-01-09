@@ -102,14 +102,15 @@ languages:
 
 ### 2.4 Network Starter Pack 
 #### OSI 7-layer model
-- *OSI 7-layer model* provides a conceptual understanding of networking.
-    1. Physical
-    2. Data link
-    3. Network
-    4. Transport
-    5. Session
-    6. Presentation
-    7. Application
+*OSI 7-layer model* provides a conceptual understanding of networking.
+1. Physical
+2. Data link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+
 - *Physical layer*
     - Devices use shared physical media = Network cable (electrical); Fibre (light), WiFi (RF)
     - Standards exist for transmitting to/ receiving from physical media. For example voltage, connector type.
