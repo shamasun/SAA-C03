@@ -12,9 +12,8 @@
     - dictionary
     - list of dictionaries
     - dictionary with list values
-
+- Example of an employee record
 ```
-# An employee record
 name: Martin D'vloper
 job: Developer
 skill: Elite
