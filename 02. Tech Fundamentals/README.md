@@ -80,12 +80,12 @@ languages:
 - Cyphertext is output and transmitted.
 - Receiver decrypts using its private key.
 
-#### Signing - a process that uses asymmetric encryption
+#### 2.3.5 Signing - a process that uses asymmetric encryption
 - Receiver wants to confirm acceptance of the original message and wants to do so under signature.
 - Receiver signs his acceptance message using **Private key**
 - Sender uses Receiver's **Public key** to verify the identity of the signer.
 
-#### Steganography
+#### 2.3.6 Steganography
 - Hiding information within a message such that its presence is not evident to human inspection.[^2]
 
 [^2]: [Steganography](https://en.wikipedia.org/wiki/Steganography?raw=true)
