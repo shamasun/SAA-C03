@@ -117,12 +117,20 @@ Provides a conceptual understanding of networking.
 - Standards help devices with a common understanding. Say, a certain voltage $\implies{}$ bit 1 or 0
 - For more devices on the network, a hub is required.
 - No device is uniquely identifiable on the network.
-- Therefore, hubs broadcast. This means collisions!
+- Therefore, hubs broadcast. Results in collisions!
 - No access control over which device can transmit on shared medium.
 - Dumb layer. Scales poorly.
 
 *Data link*
-- Works on top of a working layer 1 connection.
+- Works on top layer 1 connection.
+- Uses MAC address, a globally unique hexadecimal address for hardware devices.
+- Prescribes a 6-part format for sending information (Frames)
+    - *Preamble* and *Start Frame Delimiter (SFD)*: To know start of frame
+    - *Destination MAC address*
+    - *Source MAC address*
+    - *Ethertype*: To specify which layer 3 protocol (e.g. IP) is putting its data inside the frame.
+    - *Payload*: Contains the data from layer 3.
+    - *Frame Check Sequence (FCS)*: To identify errors in frame.
 
 *Network*
 
@@ -141,7 +149,7 @@ Provides a conceptual understanding of networking.
 - Media layers = 1, 2, and 3
 - Host layers = 4, 5, 6, and 7
 - Layer X device $\implies{}$ it has functionality for layer X and below.
-
+- MAC address is not software assigned. Unique to a specific piece of hardware.
 
 #### 2.4.1 Introduction
 
