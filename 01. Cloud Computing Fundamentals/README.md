@@ -22,7 +22,7 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 4. **Hybrid**: Private cloud + Public cloud
 
 > __Note__
-- Third party abstraction tools for multi-cloud => Loss of features unique to a cloud platform. Abstraction comes at a cost.
+- Third party abstraction tools for multi-cloud $\implies{}$ Loss of features unique to a cloud platform. Abstraction comes at a cost.
 - Names of Private cloud offerings = Outposts (AWS); Azure stack (Azure); Anthos (GCP).
 - Private cloud meets Cloud Computing definition.
 - On-premises infra (VMWare, HyperV, Zen Server) doesn't meet Cloud Computing definition.
