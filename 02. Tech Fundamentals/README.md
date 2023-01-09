@@ -1,6 +1,6 @@
 ## 2.0 Technical Fundamentals
 
-### 2.1 YAML (YAML Ain't a Markup Language) 101
+### 2.1 YAML (YAML ain't Markup Language) 101
 #### Introduction
 - Human readable data serialization language
 - Unordered collection of key-value pairs. Key-values separated by colon.
@@ -35,6 +35,12 @@ languages:
 [^1]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 
 ### 2.2 JSON (JavaScript Object Notation) 101
+- Object = Unordered set of key-value pairs enclosed in {}
+- Array = collection of elements in [], separated by commas.
+- Values = string, object (therefore, $\sqrt{\$4}$ nested), number, array, true, false, null
+- In AWS used for CloudFormation and Policy documents
+- Forgiving. No indentation demands like YAML
+
 
 ### 2.3 Encryption
 
