@@ -19,14 +19,14 @@
     skill: Elite
     employed: True
     foods:
-    - Apple
-    - Orange
-    - Strawberry
-    - Mango
+     - Apple
+     - Orange
+     - Strawberry
+     - Mango
     languages:
-    perl: Elite
-    python: Elite
-    pascal: Lame
+     perl: Elite
+     python: Elite
+     pascal: Lame
     ```
 
 #### Elments of a list can be written
