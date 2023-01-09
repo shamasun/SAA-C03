@@ -42,6 +42,52 @@ languages:
 - Forgiving. No indentation demands like YAML.
 
 ### 2.3 Encryption
+#### Approaches
+- At rest
+    - For protection against physical threats
+    - Used fairly commonly in Cloud environments. Even if anyone finds the host machine, they can use my data.
+- In transit
+    - An encryption wrapper/ tunnel is applied.
+    - Multiple individuals/ systems involved.
+#### Concepts
+- Plaintext
+    - Un-encrypted data.
+    - Misnomer. Can be non-text data too (images, document, etc.)
+- Algorithm
+    - Takes Plaintext + Encryption key to encrypt data
+    - Examples = Blowfish, AES, RC4, DES, RC5, RC6
+- Key
+    - Simply, a password
+- Cyphertext
+    - Output of encryption. Not text data. Encrypted data
+#### Symmetric encryption using an example
+- Sender has **Plaintext data** and **Symmetric encryption key**
+- Sender uses the two and encrypts them using **AES-256**
+- Cyphertext is output
+- But how will receiver decrypt without the key being transferred too? 
+
+> __Note__
+- Here, same key is used for encryption and decryption.
+- Therefore good for local file/ disk encryption. 
+- Not recommended for data transfer.
+
+#### Asymmetric encryption using an example
+- Sender and Receiver agree on using asymmetric encryption.
+- Receiver has two keys - **Public key** and **Private key**.
+- Receiver makes his Public key, public.
+- Sender uses **Plaintext data** and Receiver's **Public key** and encrypts them using asymmetric algorithm.
+- Cyphertext is output and transmitted.
+- Receiver decrypts using its private key.
+
+> __Note__
+- Public key encrypts. Its associated private key decrypts.
+- When two or more parties involved
+- Used in 
+    - PGP (an email encryption system)
+    - SSL/ TLS (encrypting browser communications)
+    - SSH (popular method for accessing servers using key based auth)
+- Computationally expensive. $\therefore{}$ also used to initally send symmetric encryption keys :nerd_face:
+
 
 ### 2.4 Network Starter Pack 
 
