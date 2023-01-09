@@ -1,7 +1,7 @@
 ## 2.0 Technical Fundamentals
 
 ### 2.1 YAML (YAML ain't Markup Language) 101
-#### Introduction
+#### 2.1.1 Introduction
 - Human readable data serialization language
 - Unordered collection of key-value pairs. Key-values separated by colon.
 - Supported values = numbers, floating point, boolean, and null
@@ -13,10 +13,10 @@
     - list of dictionaries
     - dictionary with list values
 - CloudFormation templates are written in YAML
-#### Elements of a list can be written
+#### 2.1.2 Elements of a list can be written
 - in-line within square brackets
 - as sub-bullets below the key, using hyphen as the bullet
-#### Example of an employee record[^1]
+#### 2.1.3 Example of an employee record[^1]
 ```
 name: Bharathan
 job: Developer
@@ -42,25 +42,25 @@ languages:
 - Forgiving. No indentation demands like YAML.
 
 ### 2.3 Encryption
-#### Approaches
-- At rest
+#### 2.3.1 Approaches
+- *At rest*
     - For protection against physical threats
     - Used fairly commonly in Cloud environments. Even if anyone finds the host machine, they can use my data.
-- In transit
+- *In transit*
     - An encryption wrapper/ tunnel is applied.
     - Multiple individuals/ systems involved.
-#### Concepts
-- Plaintext
+#### 2.3.2 Concepts
+- *Plaintext*
     - Un-encrypted data.
     - Misnomer. Can be non-text data too (images, document, etc.)
-- Algorithm
+- *Algorithm*
     - Takes Plaintext + Encryption key to encrypt data
     - Examples = Blowfish, AES, RC4, DES, RC5, RC6
-- Key
+- *Key*
     - Simply, a password
-- Cyphertext
+- *Cyphertext*
     - Output of encryption. Not text data. Encrypted data
-#### Symmetric encryption using an example
+#### 2.3.3 Symmetric encryption using an example
 - Sender has **Plaintext data** and **Symmetric encryption key**
 - Sender uses the two and encrypts them using **AES-256**
 - Cyphertext is output
@@ -71,7 +71,7 @@ languages:
 - Therefore good for local file/ disk encryption. 
 - Not recommended for data transfer.
 
-#### Asymmetric encryption using an example
+#### 2.3.4 Asymmetric encryption using an example
 - Sender and Receiver agree on using asymmetric encryption.
 - Receiver has two keys - **Public key** and **Private key**.
 - Receiver makes his Public key, public.
@@ -86,8 +86,7 @@ languages:
     - PGP (an email encryption system)
     - SSL/ TLS (encrypting browser communications)
     - SSH (popular method for accessing servers using key based auth)
-- Computationally expensive. $\therefore{}$ also used to initally send symmetric encryption keys :nerd_face:
-
+- Computationally expensive. So, used to initally send symmetric encryption keys! Brilliant :nerd_face:
 
 ### 2.4 Network Starter Pack 
 
