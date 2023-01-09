@@ -18,7 +18,7 @@
 - in-line within square brackets
 - as sub-bullets below the key, using hyphen as the bullet
 
-Example of an employee record
+Example of an employee record[^1]
 ```
 name: Bharathan
 job: Developer
@@ -34,7 +34,7 @@ languages:
  python: Elite
  pascal: Lame
 ```
-
+[^1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 ### 2.2 JSON (JavaScript Object Notation) 101
 
 ### 2.3 Encryption
