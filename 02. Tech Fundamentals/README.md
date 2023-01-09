@@ -1,5 +1,43 @@
 ## 2.0 Technical Fundamentals
+
 ### 2.1 YAML (YAML Ain't a Markup Language) 101
+#### Introduction
+- Human readable data serialization language
+- Unordered collection of key-value pairs. Key-values separated by colon.
+- Supported values = numbers, floating point, boolean, and null
+- Indentation matters. Use spaces. Denotes structure.
+- Commonly used for storing configuration.
+- Values can also be a
+    - list
+    - dictionary
+    - list of dictionaries
+    - dictionary with list values
+
+```
+# An employee record
+name: Martin D'vloper
+job: Developer
+skill: Elite
+employed: True
+foods:
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+languages:
+  perl: Elite
+  python: Elite
+  pascal: Lame
+```
+
+#### Elments of a list can be written
+- in-line within square brackets
+- as sub-bullets below the key, using hyphen as the bullet
+
+
+#### CloudFormation templates
+- Written in YAML
+
 
 ### 2.2 JSON (JavaScript Object Notation) 101
 
