@@ -13,12 +13,10 @@
     - list of dictionaries
     - dictionary with list values
 - CloudFormation templates are written in YAML
-
 #### Elements of a list can be written
 - in-line within square brackets
 - as sub-bullets below the key, using hyphen as the bullet
-
-Example of an employee record[^1].
+#### Example of an employee record[^1].
 ```
 name: Bharathan
 job: Developer
@@ -35,6 +33,7 @@ languages:
  pascal: Lame
 ```
 [^1]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
 ### 2.2 JSON (JavaScript Object Notation) 101
 
 ### 2.3 Encryption
