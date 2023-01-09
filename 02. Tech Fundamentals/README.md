@@ -101,8 +101,8 @@ languages:
 - Assymetric encryption is also useful in ID verification. 
 
 ### 2.4 Network Starter Pack 
-#### OSI 7-layer model
-*OSI 7-layer model* provides a conceptual understanding of networking.
+#### 2.4.1 OSI 7-layer model
+Provides a conceptual understanding of networking.
 1. Physical
 2. Data link
 3. Network
@@ -111,28 +111,28 @@ languages:
 6. Presentation
 7. Application
 
-- *Physical layer*
-    - Devices use shared physical media = Network cable (electrical); Fibre (light), WiFi (RF)
-    - Standards exist for transmitting to/ receiving from physical media. For example voltage, connector type.
-    - Standards help devices with a common understanding. Say, a certain voltage $\implies{}$ bit 1 or 0
-    - For more devices on the network, a hub is required.
-    - No device is uniquely identifiable on the network.
-    - Therefore, hubs broadcast. This means collisions!
-    - No access control over which device can transmit on shared medium.
-    - Dumb layer. Scales poorly.
+*Physical*
+- Devices use shared physical media = Network cable (electrical); Fibre (light), WiFi (RF)
+- Standards exist for transmitting to/ receiving from physical media. For example voltage, connector type.
+- Standards help devices with a common understanding. Say, a certain voltage $\implies{}$ bit 1 or 0
+- For more devices on the network, a hub is required.
+- No device is uniquely identifiable on the network.
+- Therefore, hubs broadcast. This means collisions!
+- No access control over which device can transmit on shared medium.
+- Dumb layer. Scales poorly.
 
-- *Data link*
-    - Works on top of a working layer 1 connection.
+*Data link*
+- Works on top of a working layer 1 connection.
 
-- *Network*
+*Network*
 
-- *Transport*
+*Transport*
 
-- *Session*
+*Session*
 
-- *Presentation*
+*Presentation*
 
-- *Application*
+*Application*
 
 
 
