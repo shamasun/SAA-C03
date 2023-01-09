@@ -60,6 +60,7 @@ languages:
     - Simply, a password
 - *Cyphertext*
     - Output of encryption. Not text data. Encrypted data
+
 #### 2.3.3 Symmetric encryption using an example
 - Sender has **Plaintext data** and **Symmetric encryption key**
 - Sender uses the two and encrypts them using **AES-256**
@@ -68,8 +69,8 @@ languages:
 
 > __Note__
 - Here, same key is used for encryption and decryption.
-- Therefore good for local file/ disk encryption. 
-- Not recommended for data transfer.
+- Not recommended for data transfer, unless the key itself has been securely transferred!
+- Therefore good for local file/ disk encryption.
 
 #### 2.3.4 Asymmetric encryption using an example
 - Sender and Receiver agree on using asymmetric encryption.
@@ -79,16 +80,29 @@ languages:
 - Cyphertext is output and transmitted.
 - Receiver decrypts using its private key.
 
+#### Signing - a process that uses asymmetric encryption
+- Receiver wants to confirm acceptance of the original message and wants to do so under signature.
+- Receiver signs his acceptance message using **Private key**
+- Sender uses Receiver's **Public key** to verify the identity of the signer.
+
+#### Steganography
+- Hiding information within a message such that its presence is not evident to human inspection.[^2]
+
+[^2]: [Steganography](https://en.wikipedia.org/wiki/Steganography?raw=true)
+
 > __Note__
-- Public key encrypts. Its associated private key decrypts.
-- When two or more parties involved
-- Used in 
+- Public key encrypts, while the associated private key decrypts.
+- Used when two or more parties involved.
+- Used in these examples
     - PGP (an email encryption system)
     - SSL/ TLS (encrypting browser communications)
     - SSH (popular method for accessing servers using key based auth)
 - Computationally expensive. So, used to initally send symmetric encryption keys! Brilliant :nerd_face:
+- Assymetric encryption is also useful in ID verification. 
 
 ### 2.4 Network Starter Pack 
+
+
 
 #### 2.4.1 Introduction
 
