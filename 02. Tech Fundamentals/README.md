@@ -37,7 +37,7 @@ languages:
 ### 2.2 JSON (JavaScript Object Notation) 101
 - Object = Unordered set of key-value pairs enclosed in {}
 - Array = collection of elements in [], separated by commas.
-- Values = string, object (therefore, $\sqrt{\$4}$ nested), number, array, true, false, null
+- Values = string, object ($\therefore$, nested), number, array, true, false, null
 - In AWS used for CloudFormation and Policy documents
 - Forgiving. No indentation demands like YAML
 
