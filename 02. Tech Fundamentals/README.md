@@ -12,31 +12,28 @@
     - dictionary
     - list of dictionaries
     - dictionary with list values
-- Example of an employee record
-    ```
-    name: Bharathan
-    job: Developer
-    skill: Elite
-    employed: True
-    foods:
-     - Apple
-     - Orange
-     - Strawberry
-     - Mango
-    languages:
-     perl: Elite
-     python: Elite
-     pascal: Lame
-    ```
+- CloudFormation templates are written in YAML
 
-#### Elments of a list can be written
+#### Elements of a list can be written
 - in-line within square brackets
 - as sub-bullets below the key, using hyphen as the bullet
 
-
-#### CloudFormation templates
-- Written in YAML
-
+Example of an employee record
+```
+name: Bharathan
+job: Developer
+skill: Elite
+employed: True
+foods:
+ - Apple
+ - Orange
+ - Strawberry
+ - Mango
+languages:
+ perl: Elite
+ python: Elite
+ pascal: Lame
+```
 
 ### 2.2 JSON (JavaScript Object Notation) 101
 
