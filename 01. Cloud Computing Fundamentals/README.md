@@ -27,7 +27,7 @@ Based on the formal definiton from [(NIST)](/assets/files/nistspecialpublication
 - Private cloud meets Cloud Computing definition.
 - On-premises infra (VMWare, HyperV, Zen Server) doesn't meet Cloud Computing definition.
 - Hybrid environment/ network (not Hybrid Cloud) = Using Public cloud with on-premises equipment. 
-- Hybrid cloud => Same tooling, same interface, for public and private cloud.
+- Hybrid cloud $\implies{}$ Same tooling, same interface, for public and private cloud.
 
 ### 1.3 Cloud Service Models
 
