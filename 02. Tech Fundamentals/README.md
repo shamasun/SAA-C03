@@ -180,7 +180,7 @@ Provides a conceptual understanding of networking.
 
         | n                  |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |
         |          ---              |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
-        | **Binary value** $2^(n-1)$ |  128 |  64  |  32  |  16  |   8  |   4  |   2  |  1 |
+        | **Binary value** $2^{(n-1)}$ |  128 |  64  |  32  |  16  |   8  |   4  |   2  |  1 |
         |      **Binary number**     |       |       |       |       |       |       |       |       |
 
 
