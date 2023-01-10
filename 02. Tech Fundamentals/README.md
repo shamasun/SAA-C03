@@ -103,13 +103,13 @@ languages:
 ### 2.4 Network Starter Pack 
 #### 2.4.1 OSI 7-layer model
 Provides a conceptual understanding of networking.
-1. Physical
-2. Data link
-3. Network
-4. Transport
-5. Session
-6. Presentation
-7. Application
+1. Physical (L1)
+2. Data link (L2)
+3. Network (L3)
+4. Transport (L4)
+5. Session (L5)
+6. Presentation (L6)
+7. Application (L7)
 
 *Physical*
 - Devices use shared physical media = Network cable (electrical); Fibre (light), WiFi (RF)
@@ -122,38 +122,36 @@ Provides a conceptual understanding of networking.
 - Dumb layer. Scales poorly.
 
 *Data link*
-- Works on top the physical layer.
-- **Uses MAC address**, a globally unique hexadecimal address for hardware devices.
-- Prescribes a 6-part format for sending information (**Frames**)
+- Uses the physical layer.
+- Uses **MAC address**, a globally unique hexadecimal address for hardware devices.
+- Uses a 6-part format for sending information (**Frames**)
     - *Preamble* and *Start Frame Delimiter (SFD)*: To know start of frame
     - *Destination MAC address*
     - *Source MAC address*
     - *Ethertype*: To specify which layer 3 protocol (e.g. IP) is putting its data inside the frame.
     - *Payload*: Contains the data from layer 3.
     - *Frame Check Sequence (FCS)*: To identify errors in frame.
-- Process
-    - Lets consider applications on two PCs trying to communicate - PC(L) and PC(R)
+- Uses **Collision Detection** (CD)
+    - On collision, a random back-off occurs.
+    - On repeat collision, back-off occurs for longer period.
+- Uses **Switch** (not Hub)
+    - Does not broadcast to all PCs like a Hub.
+    - Reads frames. Maintains MAC address table for devices.
+    - Relays only to PC in destination MAC address.
+    - Reduces collisions.
+- Uses below process
+    - Consider two PCs trying to communicate. PC(L) and PC(R)
     - Say, PC(L) knows MAC address of PC(R).
-    - Application on PC(L) wants its Ethernet to send data to MAC address of PC(R).
-    - L2(L) creates a frame, F1. 
+    - Application on PC(L) wants Ethernet to send data to MAC address of PC(R).
+    - L2(L) creates a frame F1.
     - Data encapsulated into payload of F1.
-    - L2(L) looks for a carrier signal on L1. If any device on the network were transmitting, a signal will be seen (CSMA).
-    - If L2(L) detects signal on L1, it waits before transmitting (**Access control**)
-    - F1 is passed to L1(L) when no signal detected.
-    - L1(L) converts data to physical standard and transmits.
-    - L1(R) passes it up to L2(R).
-    - L2(R) verifies destination MAC address.
-    - L2(R) de-encapsulates.
-    - If messages cross on L1, there is collision.
-    - L2 has **Collision Detection** (CD)
-        - On collision, a random back-off occurs.
-        - On a repeat collision, back-off for a longer period attempted.
-- **Switch** in place of Hub
-    - Why transmit frames to all PCs (including those not on the destination)? Recall that Hubs broadcast and are dumb.
-    - This increases occurences of collisions.
-    - Switch understands L2. 
-    - They can read frames. So, maintain a MAC address table for all devices connected to.
-    - Won't therefore relay to all PCs. Only to the PC names in the destination MAC address part of frame.
+    - L2(L) looks for a carrier signal on L1 (**CSMA**)
+        - If signal detected, waits before transmitting (**Access control**)
+        - When no signal detected, F1 is passed to L1(L).
+            - L1(L) converts frame to physical standard and transmits.
+            - L1(R) passes it up to L2(R).
+            - L2(R) verifies destination MAC address.
+            - L2(R) de-encapsulates.
 
 *Network*
 
@@ -175,17 +173,18 @@ Provides a conceptual understanding of networking.
 - MAC address is not software assigned. Unique to a specific piece of hardware.
 - CSMA = Carrier Sense Multiple Access. Looks for signs of career signal on L1.
 - Back-off = period during which no device attempts transmission.
-- Decimal to Binary conversion
-    - IP addresss = Dotted decimal notation
+- Decimal to Binary conversion (IP addressing)
     - Range = [0, 255]
-    - Each number takes 8 bits to represent. Total 32 bits.
+    - Each number in range takes 8 bits to represent. Total 32 bits.
     - See table below
-    
-        | Position                  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
+
+        | Position                  |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
         |          ---              |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
         | **Binary Position Value** |  128  |  64   |  32   |  16   |   8   |   4   |   2   |   1   |
         |      **Binary Value**     |       |       |       |       |       |       |       |       |
 
+
+$\x^2$
 
 #### 2.4.1 Introduction
 
