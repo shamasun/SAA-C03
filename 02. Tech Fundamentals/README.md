@@ -179,9 +179,10 @@ Provides a conceptual understanding of networking.
     - IP addresss = Dotted decimal notation
     - Range = [0, 255]
     - Each number takes 8 bits to represent. Total 32 bits.
-    - | Position              |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 100 |
-      | Binary Position Value | 128 | 64  | 32  | 16  |  8  |  4  |  2  |  1  |
-      | Binary Value          |     |     |     |     |     |     |     |     |
+
+| Position              |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 100 |
+| Binary Position Value | 128 | 64  | 32  | 16  |  8  |  4  |  2  |  1  |
+| Binary Value          |     |     |     |     |     |     |     |     |
 
 
 
