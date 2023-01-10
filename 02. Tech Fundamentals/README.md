@@ -122,7 +122,7 @@ Provides a conceptual understanding of networking.
 - Dumb layer. Scales poorly.
 
 *Data link*
-- Works on top layer 1 connection.
+- Works on top the physical layer.
 - Uses MAC address, a globally unique hexadecimal address for hardware devices.
 - Prescribes a 6-part format for sending information (Frames)
     - *Preamble* and *Start Frame Delimiter (SFD)*: To know start of frame
@@ -131,6 +131,29 @@ Provides a conceptual understanding of networking.
     - *Ethertype*: To specify which layer 3 protocol (e.g. IP) is putting its data inside the frame.
     - *Payload*: Contains the data from layer 3.
     - *Frame Check Sequence (FCS)*: To identify errors in frame.
+- Process
+    - Lets consider applications on two PCs trying to communicate - PC(L) and PC(R)
+    - Suppose, PC(L) knows MAC address of PC(R).
+    - Application on PC(L) wants its Ethernet to send data to the MAC address of PC(R).
+    - Layer 2 software then creates a frame, F1. 
+    - Data is encapsulated into the payload part of F1.
+    - Layer 2 software then looks for a carrier signal on Layer 1. If any device on the network were transmitting, a signal will be seen (CSMA).
+    - F1 is passed to Layer 1 when no signal detected.
+    - Layer 1(L) converts data to physical standard and transmits.
+    - Layer 1(R) passes it up to Layer 2 (R) 
+    - Layer 2(R) verifies destination MAC address.
+    - Layer 2(R) de-encapsulates.
+    - If Layer 2 detects signal on Layer 1 already, it waits before transmitting (= Access control)
+    - If messages cross on layer 1, there is a collision.
+    - Layer 2 has Collision Detection (CD)
+        - On collision, a random back-off occurs.
+        - On a repeat collision, back-off for a longer period attempted.
+- Switch in place of Hub
+    - Why transmit frames to all PCs (including those not on the destination)? Recall that Hubs broadcast and are dumb.
+    - This increases occurences of collisions.
+    - Switch understands Layer 2. 
+    - They can read frames. So, maintain a MAC address table for all devices connected to.
+    - Won't therefore relay to all PCs. Only to the PC names in the destination MAC address part of frame.
 
 *Network*
 
@@ -150,6 +173,8 @@ Provides a conceptual understanding of networking.
 - Host layers = 4, 5, 6, and 7
 - Layer X device $\implies{}$ it has functionality for layer X and below.
 - MAC address is not software assigned. Unique to a specific piece of hardware.
+- CSMA = Carrier Sense Multiple Access. Looks for signs of career signal on layer 1.
+- Back-off = period during which no device attempts transmission.
 
 #### 2.4.1 Introduction
 
