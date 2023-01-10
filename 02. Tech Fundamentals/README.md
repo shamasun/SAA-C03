@@ -180,10 +180,10 @@ Provides a conceptual understanding of networking.
     - Range = [0, 255]
     - Each number takes 8 bits to represent. Total 32 bits.
 
-| Position              |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 100 |
+| Position              |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 8 |
 | ---              |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | --- |
-| Binary Position Value | 128 | 64  | 32  | 16  |  8  |  4  |  2  |  1  |
-| Binary Value          |     |     |     |     |     |     |     |     |
+| **Binary Position Value** | 128 | 64  | 32  | 16  |  8  |  4  |  2  |  1  |
+| **Binary Value**          |     |     |     |     |     |     |     |     |
 
 Position              |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 100 |
                       |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | --- |
