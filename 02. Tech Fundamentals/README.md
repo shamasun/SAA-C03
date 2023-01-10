@@ -180,11 +180,11 @@ Provides a conceptual understanding of networking.
 
         | Position                  |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
         |          ---              |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
-        | **Binary Position Value** |  128  |  64   |  32   |  16   |   8   |   4   |   2   |   1   |
+        | **Binary Position Value** |  $2^7$ = 128 |  $2^6$ = 64  |  $2^5$ = 32  |  $2^4$ = 16  |   $2^3$ = 8  |   $2^2$ = 4  |   $2^1$ = 2  |   $2^0$ = 1 |
         |      **Binary Value**     |       |       |       |       |       |       |       |       |
 
 
-$x^2$
+$2^2$
 
 #### 2.4.1 Introduction
 
