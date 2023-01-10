@@ -169,7 +169,7 @@ Provides a conceptual understanding of networking.
 - The 7 layers form the Networking stack
 - Media layers = 1, 2, and 3
 - Host layers = 4, 5, 6, and 7
-- Layer X device $\implies{}$ it has functionality for layer X and below.
+- Layer X $\implies{}$ has functionality for layer X and below.
 - MAC address is not software assigned. Unique to a specific piece of hardware.
 - CSMA = Carrier Sense Multiple Access. Looks for signs of career signal on L1.
 - Back-off = period during which no device attempts transmission.
@@ -182,9 +182,8 @@ Provides a conceptual understanding of networking.
         |          ---              |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
         | **$2^{(n-1)}$** |  128 |  64  |  32  |  16  |   8  |   4  |   2  |  1 |
         |      **Binary number**     |       |       |       |       |       |       |       |       |
-
-
-$2^2$
+    - Conversion rule
+      ![rule](https://shamasun.github.io/SAA-C03/assets/images/dec2Bin.png?raw=true)     
 
 #### 2.4.1 Introduction
 
