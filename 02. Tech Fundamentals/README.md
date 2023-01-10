@@ -184,7 +184,7 @@ Provides a conceptual understanding of networking.
         |      **Binary Value**     |       |       |       |       |       |       |       |       |
 
 
-$\x^2$
+$x^2$
 
 #### 2.4.1 Introduction
 
