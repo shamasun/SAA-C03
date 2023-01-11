@@ -154,8 +154,49 @@ Provides a conceptual understanding of networking.
             - L2(R) de-encapsulates.
 
 *Network*
+- Enables device-to-device communications over the internet.
+- IP (Internet Protocol) is L3 protocol. Moves data between LANs without Point-to-Point links.
+    - Two versions. IPV4 and IPv6
+    - IPv4
+        - IP has two parts (say, 133.33.3.7) = Network + Host
+        - First two octets denote the network. Last two denote the host.
+        - Matching network part $\implies{}$ local. Else remote.
+        - Can be assigned 
+            - Statically by humans
+            - Automatically by machines (DHCP)
+        - Has to be unique globally.
+        - Subnet masks
+            - determine which part of an IP is network and which the host.
+            - configured on L3 of host device. Say, 255.255.0.0
+            - help host (say, your PC) determine if IP is local or remote
+            - if remote, host uses gateway (e.g., Internet router on home network) to send data.
+        - Route tables and Routes
+            - Router at the ISP has route tables.
+            - Maps destination IP to Next hop/ target
+            - ISP's router has multiple network interface cards connected to remote networks
+            - ISP router will have at least 1 route table.
+            - ISP router compares destination IP with the destination column of route table.
+            - Sent to the "next hop" getting it one step closer to the destination.
+            - Address Resolution Packet
+                - When an L3 packet and you want to encapsulate it inside a frame and send to a MAC address, but the MAC address is not known.
+                - Required - Protocol for identifying a MAC address of a known IP address.
+                - ARP runs between L2 and L3
+        - Processs (IP Routing)
+            - 
+        - Feature addition by L3
+            - ARP
+            - Route - where to forward packets?
+            - Route tables - multiple routes
+            - Router 
 
 *Transport*
+- In L3 
+    - Out-of-order arrival of packets can happen. Each packet routed independently.
+    - Packets can go missing too. Say, lost due to the number of hops limitation.
+    - There can be latency in delivery too.
+    - Doesn't offer any method of separating packets by application or channel. All packets from source to destination IP are all the same!
+
+
 
 *Session*
 
@@ -183,8 +224,10 @@ Provides a conceptual understanding of networking.
         | **$2^{(n-1)}$** |  128 |  64  |  32  |  16  |   8  |   4  |   2  |  1 |
         |      **Binary number**     |       |       |       |       |       |       |       |       |
     - Conversion rule
-    
       ![rule](https://shamasun.github.io/SAA-C03/assets/images/dec2Bin.png?raw=true)     
+- Binary to Decimal conversion
+    - Sum the **$2^{(n-1)}$** value corresponding to all the binary values of 1
+- "/24" $\implies{}$ first 24 bits for the network. Last 8 for host.
 
 #### 2.4.1 Introduction
 
