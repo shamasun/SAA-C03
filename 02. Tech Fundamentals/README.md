@@ -224,7 +224,7 @@ Provides a conceptual understanding of networking.
         | **$2^{(n-1)}$** |  128 |  64  |  32  |  16  |   8  |   4  |   2  |  1 |
         |      **Binary number**     |       |       |       |       |       |       |       |       |
     - Conversion rule
-      ![rule](https://shamasun.github.io/SAA-C03/assets/images/dec2Bin.png?raw=true)
+      ![rule](https://shamasun.github.io/SAA-C03/assets/images/dec2Bin.png)
 
 - Binary to Decimal conversion
     - Sum the **$2^{(n-1)}$** value corresponding to all the binary values of 1
