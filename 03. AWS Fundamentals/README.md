@@ -1,28 +1,27 @@
 ## AWS Fundamentals
 ### 4.1 AWS Public vs Private Services
-AWS Services come in two main types - Public and Private services
-Terms Public and Private here refer to networking ONLY
-Public services = accessible using Public end-points (like S3)
-Private services = runs within a VPC. Things within VPC or connected to VPC can access.
-For both there are permissions + networking
-So, even though S3 is Public service, by defaul an identiy other than root user has no auth to access it.
-Access detrmined by Networking + Permissions. Fo this lesson, we are concerned with the former.
-There are three network zones
-Public Internet zone: 
-AWS Public zone: 
-    - Not part of Public internet. 
-    - Its a network connected to the Public internet. 
-    - AWS public services (i.e., services with Public end-points) operate here (such as S3).
-    - Accessed using internet as transit
-AWS Private zone:
-    - On-premise resources can connect via VPN or Direct Connect
-    - EC2 instances are AWS private resources
-    - VPCs run from here
-        - Internet Gateway can be attached to it.
-            - Allows access to AWS Public services, such as S3 in the AWS Public zone.
-            - Allows access to EC2 (say) from Public Internet
-                - Provided EC2 has allocated public IP address.
-                - Architecturally, this is projecting EC2 into the AWS Public zone.
+- "Public" and "Private" used in networking context
+- Public services = accessible using Public end-points (like S3)
+- Private services = runs within a VPC. Things within VPC or connected to VPC can access.
+- Access = function of Networking + Permissions.
+    - So, even though S3 is Public service, by default an identity other than root user has no authorization to access it.
+    - In this lesson, concerned with networking.
+- There are three network zones
+    1. Public Internet zone
+    2. AWS Public zone
+        - Not part of Public internet. 
+        - Network connected to the Public internet. 
+        - AWS public services (i.e., services with Public end-points) operate here (such as S3).
+        - Accessed using internet
+    3. AWS Private zone
+        - VPCs run from here
+            - Internet Gateway (IGW) can be attached
+                - Allows access to AWS Public services, such as S3.
+                - Allows access to Public Internet 
+                    - Provided EC2 (say) has allocated public IP address.
+                    - Architecturally, this is projecting EC2 into the AWS Public zone.
+        - On-premise resources can connect via VPN or Direct Connect
+        - EC2 is an example of a AWS private resource
 
 ### 4.2 AWS Global Infrastructure
 AWS Regions
