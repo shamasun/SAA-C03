@@ -25,53 +25,43 @@
 
 ### 4.2 AWS Global Infrastructure
 AWS Regions
-    - Creation of AWS
-    - Full deployment of AWS services
-    - When interacting with a service, you are interacting with that service in a specific region
-        - IAM, Route 53 are examples of Global services however
-    -  Benefits of Regions
-        - Geographic separation means isolated fault domain
-        - Geopolitical separation. If you have data in the EU region, there is certainty that it wont end-up in China for example.
-        - Loction control. Allows tuning your deployment for performance.
-    - have a code (used in clid, code) an name (often iused in colnsole)
-    - Availability Zone 
-        - Failure is sometimes localized
-        - isolated infra within a region. AZs are connected by high-speed networks.
-        - allows, as a solution architect, to design solutions which distribute components across multiple AZs
-        - can represent one or more data centers
-        - no visibility from AWS on what an AZ is.
-        - VPCs can be crated across AZs.
-    - Resilience in AWS services
-        - Globally resilient - IAM, Route 53
-        - Region resilient - operats separate in each region
-        - AZ resilient - 
+- AWS' notion of a region
+- When interacting with a service, you are interacting with the service in a specific region
+    - IAM, Route 53 are examples of Global services however
+-  Benefits of Regions
+    - Geographic separation $\implies{}$ isolated fault domain
+    - Geopolitical separation. Data in the EU region? Certainty that it wont end-up in China.
+    - Location control. Allows tuning your deployment for performance.
+- Code used in CLI and name often used in console
+- Availability Zone 
+    - Isolated infra within a region $\implies{}$ Failure is localized
+    - AZs are connected by high-speed networks.
+    - can represent one or more data centers. No visibility from AWS.
+    - VPCs can be crated across AZs.
+- Resilience in AWS services
+    1. Global resilience - IAM, Route 53
+    2. Region resilience - operates separate in each region
+    3. AZ resilience
 
 AWS Edge Locations
-    - Can't have AWS regions in all places as your customers
-    - Hence Edge locations = Content Deliovery Networks. Sometimes edge computing
-    - Useful for Netflix to cache TV shows in remorte locations
-    - Helps with low latency
-
-regions ajd edge locations commony use together by 
-
+- Content Deliovery Networks. Sometimes edge computing.
+- Can't have AWS regions in all places as your customers
+- Useful for Netflix to cache TV shows in remote locations. Helps with low latency
 
 ### 4.3 AWS Default Virtual Private Cloud (VPC)
-Virtual network inside AWS
-Is with 1 AWS account and 1 Region.
-Regionally resilient service
-Isolated from - 
-    - Other VPCs
-    - Public Internet
-    - AWS Public zone
-Two types of VPC in a region
-    - Custom VPC (many can be had in a region)
-        - used in most serious AWS deploiyments
-        - because configurable basis ones need
+- Virtual network inside AWS
+- Spans 1 AWS account and 1 Region.
+- Regionally resilient
+- Isolated
+- Two types of VPC in a region
+    - Custom VPC
+        - many can be had in a region
+        - because configurable, used in most serious AWS deployments
         - Private and isolated by default.
-        - have multiple CIDR ranges
-    - Default VPC (= max of one per region)
+        - can have multiple CIDR ranges
+    - Default VPC
+        - max of one per region
         - lot less flexible than custom VPCs        
-        - allocated a range of IPs = VPC CIDR
         - VPC CIDR is always = 172.31.0.0/16
         - AZs within a VPC (assuming you want resilience) 
             - have subnets (carved out sub-ranges of CIDR IPs). 
@@ -83,20 +73,17 @@ Two types of VPC in a region
         - Facts
             - 1 per region.
             - Can be deleted and reinstated
-            - some services assume default VPC preswent. So, let it remain. Dont use if you dont want.
-            - CIDR range is limiting for production deploymen
+            - some services assume default VPC present. So, let it be.
+            - CIDR range may be limiting for production deployments.
             - A /16 CIDR means, a large number of IP addresses. Higher the number, smaller the network.
             - A smaller /20 subnet is created in each AZ
             - Two /17 fit into one /16. Sixteen /20 subnets can fit into /16. That is, it can support 16 AZs
-            - Default IGW, Security Group, and NACL are also created.
+            - Default IGW, Security Group, and NACL present.
             - Anything placed in default VPC subnets gets a public IPv4 address. So services in here, will be in the Public zone. Specific to default VPC only.
 
-
-Service o create private networks inside AWS
-VPCs are useful in creating a
-    - hybrid environment between AWS Private networks and On-premises networks
+- VPCs are useful in creating
+    - hybrid environment of AWS Private networks and On-premises networks
     - multi-cloud deployment
-
 
 ### 4.4 Elastic Compute Cloud (EC2) Basics
 ### 4.5 My First EC2 Instance - PART1
