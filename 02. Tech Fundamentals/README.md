@@ -226,7 +226,7 @@ Provides a conceptual understanding of networking.
     - Conversion rule
       ![test](https://shamasun.github.io/SAA-C03/assets/images/dec2Bin.png)
 
-      ![models](https://shamasun.github.io/SAA-C03/assets/images/cloud%20models.png?raw=true)
+![models](https://shamasun.github.io/SAA-C03/assets/images/cloud%20models.png?raw=true)
 
 - Binary to Decimal conversion
     - Sum the **$2^{(n-1)}$** value corresponding to all the binary values of 1
