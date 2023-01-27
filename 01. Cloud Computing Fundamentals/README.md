@@ -39,4 +39,4 @@ Based on the formal definiton from [(NIST)](/Assets/files/nistspecialpublication
     - Example - purchased a VM? Unit of consumption = OS
 
 #### 1.3.2 Types of Cloud Service models
-![models](/SAA-C03/00%20Assets/images/cloud%20models.png?raw=true)
+![models](./00%20Assets/images/cloud%20models.png?raw=true)
