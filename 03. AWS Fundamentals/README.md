@@ -73,7 +73,7 @@ AWS Edge Locations
         - Facts
             - 1 per region.
             - Can be deleted and reinstated
-            - some services assume default VPC present. So, let it be.
+            - some services assume default VPC. So, let it be.
             - CIDR range may be limiting for production deployments.
             - A /16 CIDR means, a large number of IP addresses. Higher the number, smaller the network.
             - A smaller /20 subnet is created in each AZ
@@ -86,24 +86,28 @@ AWS Edge Locations
     - multi-cloud deployment
 
 ### 4.4 Elastic Compute Cloud (EC2) Basics
+
+
+
 ### 4.5 My First EC2 Instance - PART1
 ### 4.6 My First EC2 Instance - PART2
 ### 4.7 Simple Storage Service (S3) Basics
 ### 4.8 My First S3 Bucket
 ### 4.9 CloudFormation (CFN) Basics
-Template to create AWS Infrastructuere
-Also update template and reapply
-Even to delete infra 
-YAML or JSON
-All templates have a resources section. This is what tells CF waht to do
-    - Only Mandatory part of a CF template
+- Template to create AWS Infrastructuere
+- Also update template and reapply
+- Even to delete infra 
+- Supports YAML or JSON
+- All templates have a resources section.
+    - Only Mandatory part of template
     - YAML
-        - If you have a AWSTemplateFormatVersion section, the Description section must follow immediately.
-        - Metadata section: control how the UI presents
-        - Parameters section: Add fields to prompt user for more information. Can have settings on which are vlid entries.Say, AllowedValues key with values = [t2.micro, m1.small, m1.large]
-        - Mappings section: allows creation of lookupm tables
-        - Conditions section: Decision making in the template. Conditional creation of resources.
-        - Outputs: 
+        - Description: info for user
+            - If you have a AWSTemplateFormatVersion section, Description must follow it immediately.
+        - Metadata: control how presents in AWS console UI
+        - Parameters: Add fields to prompt user for information (free text fields, dropdowns). Control choices (e.g., on AZs to use, EC2 instances types and sizes)
+        - Mappings: allows creation of lookup tables
+        - Conditions: Decision making in the template. Conditional creation of resources.
+        - Outputs: Control what is reurned on completion of running the CF template.
 
 ### 4.10 Simple Automation With CFN
 ### 4.11 CloudWatch (CW) Basics
