@@ -2,7 +2,7 @@
 
 ### 1.1 What is Cloud Computing?
 
-Based on the formal definiton from [(NIST)](/Assets/files/nistspecialpublication800-145.pdf). All of them need to be satisfied.
+Based on the formal definiton from [(NIST)](../00%20Assets/files/nistspecialpublication800-145.pdf). All of them need to be satisfied.
 
 1. **On-demand self-service**</span>: Provision as needed, without requiring human interaction.
 2. **Broad network access**: Available over the network and accessed through standard mechanisms (http, https, ssh, vpn, etc.)
