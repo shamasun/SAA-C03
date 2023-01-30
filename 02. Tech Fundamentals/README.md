@@ -180,9 +180,8 @@ Provides a conceptual understanding of networking.
             - Address Resolution Packet
                 - When an L3 packet and you want to encapsulate it inside a frame and send to a MAC address, but the MAC address is not known.
                 - Required - Protocol for identifying a MAC address of a known IP address.
-                - ARP runs between L2 and L3
+                - ARP runs between L2 and L3  
         - Processs (IP Routing)
-            - 
         - Feature addition by L3
             - ARP
             - Route - where to forward packets?
@@ -261,8 +260,53 @@ Provides a conceptual understanding of networking.
 ### 2.9 DNS 101
 
 #### 2.9.1 What does DNS do?
+- At a very high level, DNS converts name into IP addresses.
 
 #### 2.9.2 Why does DNS need a complex architecture?
+- One or few DNS servers in inadequate.
+    - Risk from bad actors.
+    - Problem of scale. Everybody using the internet needs DNS.
+    - Huge database. Approximately 341 million domains. Many records too within each domain.
+- Can we not address this using more servers? Each having an exact same copy of the data?
+    - May address risk through redundancy
+    - But doesn't address scaling problem
+- A hierarchical structure to the DNS database is how it is solved.
+    - A motivating example
+        - Bill is a football league organizer
+            - He maintains phone numbers of managers (John, Fred, Jane) of three football teams A, B, and C
+        - John, like the other two managers, maintains a list of his players and their phone numbers
+        - To call a player Steve on Team A
+            - Approach Bill
+            - He will return the phone number of John
+            - Approach John, to get Steve's number
+        - Here
+            - Steve = A web server, for example
+            - Phone number = the IP address
+            - Team A = a Domain Name
+            - Bill, John, Fred, Jane are Name Servers.
+            - The lists are zones or zone files
+- Terms
+    - DNS Zone
+        - Hosts DNS records of a host name (say, mail.netflix.com for a mail server, www.netflix.com for website)
+        - Like the list of players and their phone numbers
+    - Zonefile = file storing the zone on disk
+    - Name Server (NS) = Server hosting 1+ Zones and storing 1+ ZoneFiles
+- Hierarchical Design
+    - DNS root
+        - Where query starts
+        - Is a DNS Zone hosted on DNS Name Servers like any other in DNS. There are 13 such servers.
+        - Root servers are managed by several organizations.
+        - Root zones are managed by Internet Assigned Numbers Authority (IANA). Responsible for contents.
+        - Maps Top Level Domains or TLDs (.com, .org, .in, etc) to Name Servers of the registries. Verisign is a registry for .com TLD.
+    - Top Level Domains (TLD)
+        - Is also a DNS zone hosted on DNS Name Servers
+        - Has high level data of domains within the TLD in question (for e.g. for .com TLD, it can have data on twitter.com and netflix.com domains)
+        - Doesnt' have details of records within the domain in question. Just info on domain itself.
+        - The Name Servers here map the domain to the Name Servers hosting the zone of the domain in question.
+    - Name Servers hosting 1+ Zones for domains
+        - Is also a DNS zone hosted on DNS Name Servers
+        - The Name servers here host the zone containing the details of records for a given domain. That is, the name servers store the zonefiles for netflix.com (say). IP addresses are available in these zonefiles.
+
 
 #### 2.9.3 How DNS works? - walking the tree
 
