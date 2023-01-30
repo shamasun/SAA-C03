@@ -274,7 +274,7 @@ Provides a conceptual understanding of networking.
     - A motivating example
         - Bill is a football league organizer
             - He maintains phone numbers of managers (John, Fred, Jane) of three football teams A, B, and C
-        - John, like the other two managers, maintains a list of his players and their phone numbers
+        - John, like the other two managers, maintains a list of his players and their phone numbers.
         - To call a player Steve on Team A
             - Approach Bill
             - He will return the phone number of John
