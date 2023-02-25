@@ -261,21 +261,22 @@ Provides a conceptual understanding of networking.
 
 #### 2.9.1 What does DNS do?
 - At a very high level, DNS converts name into IP addresses.
-
+- Technically - "Help get a query response from an authoritative zone which hosts the DNS records of interest."
+- A huge global distributed database.
 #### 2.9.2 Why does DNS need a complex architecture?
 - One or few DNS servers in inadequate.
     - Risk from bad actors.
     - Problem of scale. Everybody using the internet needs DNS.
     - Huge database. Approximately 341 million domains. Many records too within each domain.
 - Can we not address this using more servers? Each having an exact same copy of the data?
-    - May address risk through redundancy
+    - May address bad actor risk through redundancy
     - But doesn't address scaling problem
 - A hierarchical structure to the DNS database is how it is solved.
     - A motivating example
         - Bill is a football league organizer
             - He maintains phone numbers of managers (John, Fred, Jane) of three football teams A, B, and C
         - John, like the other two managers, maintains a list of his players and their phone numbers.
-        - To call a player Steve on Team A
+        - To call a player named Steve on Team A
             - Approach Bill
             - He will return the phone number of John
             - Approach John, to get Steve's number
@@ -284,7 +285,7 @@ Provides a conceptual understanding of networking.
             - Phone number = the IP address
             - Team A = a Domain Name
             - Bill, John, Fred, Jane are Name Servers.
-            - The lists are zones or zone files
+            - The lists are zones or zone files.
 - Terms
     - DNS Zone
         - Hosts DNS records of a host name (say, mail.netflix.com for a mail server, www.netflix.com for website)
@@ -307,16 +308,119 @@ Provides a conceptual understanding of networking.
         - Is also a DNS zone hosted on DNS Name Servers
         - The Name servers here host the zone containing the details of records for a given domain. That is, the name servers store the zonefiles for netflix.com (say). IP addresses are available in these zonefiles.
 
-
 #### 2.9.3 How DNS works? - walking the tree
+- Querying www.netflix.com
+- Check local DNS cache on local machine. This file therefore overrides DNS.
+- If the local client isn't aware of the IP address already
+    - Use a DNS resolver
+        - = A DNS Server
+        - Often runs on a home router/ ISP
+        - also has a local cache. Checked first (non-authoritatve answer)
+    - When DNS resolver has no cached entry
+        - Queries root zone
+        - Root Servers return Name Servers for ".com" TLD
+    - Resolver queries one of the .com TLDs for www.netflix.com
+    - If the "netflix.com" domain is registered, details of the netflix.com domain returned to DNS resolver.
+    - NS for netflix.com is then queried for www.netflix.com. Authoritative result.
+    - Resolver caches result for better prformance later.
+    - Finally, returns results to client machine
+- Every step moves us closer to authoritative result (walking the tree)
 
 #### 2.9.4 What happens when a domain is registered?
+- Four key entities
+    - Person registering
+    - Domain registrar (Route53 regsitered domains, Hover, etc)
+    - Hosting provider (Route53 Hosted zones, Hover, etc)
+    - TLD Registry (like Verisign for .com)
+    - TLD zone
+- Registar and Hosting Provider - not the same
+    - Registrar = allows purchase of domains. Have relationship with various TLD registries.
+    - Hosting Providers = operate name servers that host DNS zones
+    - Some companies perform one or both functions (like Route53 and Hover)
+- Steps in registration
+    1. Pay for domain to Domain Registar (GoDaddy, Route53, Hover, etc,)
+    2. Now, need a zone for domain being registered
+        - if same company, zone created and hosted automatically
+    3. Domain Registrar communicates this to TLD registry
+    4. The TLD registry, adds relevant info to the .com TLD zone. $\implies$ Domain now live
 
 #### 2.9.5 Why do we need DNSSEC?
+- Security add-on for DNS
+    - **Chain of Trust** from root zone --> records
+    - in **cryptographically verifiable** way
+- Benefits
+    - Data origin authentication $\implies$ is data from "netflix.com" from the real netflix.com?
+    - Data Integrity Protection $\implies$ has data been modified in transit?
+- Additive. Doesnt replace DNS.
+    - DNS device gets DNS results
+    - DNSSEC capable device gets DNS and DNSSEC results.
+        - DNSSEC doesn't correct anything, Validation only.
+- DNS when disrupted by bad actors (simplified example)
+    - Evil Bob queries catagram.io (say)
+    - Domain resolver begins walking the tree.
+    - Before authoritative results are obtained, evil Bob responds with a fake response.
+    - $\implies$ poisons cache at the resolver.
+    - Good Bob queries for a catagram.io record. Gets poisoned result.
+- Command prompt differences (DNS vs. DNS+ DNSSEC)
+    - Run to observe differences
+        ```
+        dig www.icann.org
+        dig www.icann.org +dnssec
+        ``` 
+    - For every normal DNS result, notice an RRSIG record in DNSSEC
+        - RRSIG = digital signature of record it corresponds to.
+        - can be used to validate
 
 #### 2.9.6 How DNSSEC Works within a Zone?
+This section focuses on data integrity protection.  
+- **Resource Recordset (RRSET)** =  records with same name and type is an RRSET
+    - Consider zone icann.org
+        - Has MX records for mail exchange server (say)
+        - Say, icann.org has 4 MX type resource records
+    - DNSSEC works on RRSETs only
+- **RRSIG** = stores digital signature of RRSET
+- **Zone signing Key (ZSK)** = pair of public and private keys
+- If a bad actor changes MX record set, email could be redirected.
+- Signing process
+    - Take RRSET 
+    - Cryptographic signing using private key
+    - Private part is NOT stored in zone    
+    - Signed result stored in zone as RRSIG record alongside RRSET
+    - A bad actor may change RRSET. But RRSIG cannot be changed.
+- How does domain resolver verify RRSIG?
+    - Using Public key
+    - Consider a DNSSEC enabled zone icann.org (say). It has these records - 
+        - RRSET
+        - RRSIG
+        - DNSKEY. Two types
+            - value 256 $\implies$ public part of ZSK
+            - value 257 $\implies$ KSK
+    - Resolver validates RRSET vs. RRSIG + Public part of ZSK
+    - Trusts that
+        - Only zone admin has access to private key
+        - DNSKEY has not been changed. 
+            - Can we trust the DNSKEY (ZSK)? Someone could have - 
+                - Put a fake DNSKEY (ZSK) in the zone
+                - Taken its private part to create a new RRSIG for the RRSET
+                - and taken over the emails of this domain!
+    - RRSIG of DNSKEY can validate that DNSKEY is unchanged
+        - this RRSIG is created by KSK
+        - But, can we trust the DNSKEY (KSK) then? See below.
+- KSK
+    - In the KSK scenario, these are records in a zone -
+        - RRSET
+        - RRSIG of RRSET
+        - DNSKEY (ZSK)
+        - RRSIG of DNSKEY (ZSK)
+        - DNSKEY (KSK) 
+    - The DNSKEY (KSK) is referenced from the parent. 
+        - Indicator of parent zone's trust
+        - Do you see how this makes it difficult for a bad actor now!
 
 #### 2.9.7 DNSSEC Chain of Trust
+How it works?
+- Delegated Sign (DS) Record
+
 
 #### 2.9.8 DNSSEC Root Signing Ceremony
 
